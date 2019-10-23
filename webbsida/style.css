@@ -1,0 +1,26 @@
+body {
+    font-family: arial;
+    background-color: springgreen;
+    
+}
+
+p {
+    color: white;
+    background-color: black;
+}
+
+ul {
+    font-family: arial;
+    font-size: 24px;
+}
+
+table {
+    color: black;
+}
+
+
+#volvo{
+    width: 700;
+    box-shadow: 10px 10px 5px;
+    margin-top:15px;
+}
