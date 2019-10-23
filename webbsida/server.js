@@ -15,6 +15,8 @@ createServer((request, response) => {
           return sendFile(response, 200, "text/css", "./style.css");
         case"/volvo240.jpg":
           return sendFile(response, 200, "image/jpeg","./volvo240.jpg");
+        case"/error.html":
+          return sendFile(response, 200, "text/html", "./error.html");
     }
 }).listen(8080);
 
