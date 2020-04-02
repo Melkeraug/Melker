@@ -1,0 +1,22 @@
+{
+  "name": "repition",
+  "version": "1.0.0",
+  "description": "Melker är bäst",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Melker",
+  "license": "ISC"
+}
