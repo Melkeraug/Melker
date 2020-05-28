@@ -9,6 +9,27 @@ app.use(express.urlencoded())
 
 const users = []
 
+
+
+app.get('/', (req, res) => res.sendFile(clientDir + 'index.html'))
+app.get('/style', (req, res) => {
+  res.sendFile(clientDir + 'style.css')
+})
+
+app.get('/IsraelAdesanya', (req, res) => {
+  res.sendFile(clientDir + 'slutprojekt.html')
+})
+
+app.get('/Chicken.jpg', (req, res) => {
+  res.sendFile(clientDir + 'chicken.jpg')
+})
+
+app.post('/login', function (req, res) {
+  let name = req.body.namn
+  let password = req.body.password
+   console.log("namn: " + name + " password: " + password)
+  res.send('POST request to the homepage')
+})
 app.get('/users', (req, rs) => {
   res.json(users)
 })
@@ -39,21 +60,4 @@ app.post('/users/login', async (req, res) => {
     res.status(500).send()
   }
 })
-
-app.get('/', (req, res) => res.sendFile(clientDir + 'index.html'))
-app.get('/style', (req, res) => {
-  res.sendFile(clientDir + 'style.css')
-})
-
-app.get('/Chicken.jpg', (req, res) => {
-  res.sendFile(clientDir + 'chicken.jpg')
-})
-
-app.post('/login', function (req, res) {
-  let name = req.body.namn
-  let password = req.body.password
-   console.log("namn: " + name + " password: " + password)
-  res.send('POST request to the homepage')
-})
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

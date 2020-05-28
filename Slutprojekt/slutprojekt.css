@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#div1{
+    margin:auto;
+    width:60%;
+    
+    text-align: center;
+    font-family: monospace;
+}
+
+#footer{
+    clear: both;
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 3px;
+    word-spacing: 250px;
+    text-align: center;
+    font-family: monospace;
+    background-color: darkgrey;
+}
+
+#bild{
+    width: 360px;
+    height: 384px;
+    border: 3px solid black;
+}
+
+#stor{
+    background-color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 5 / 2; 
+    width: 25%;
+    padding: 5px;
+}
+.div2 { 
+    grid-area: 1 / 2 / 5 / 6; 
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+
+}
+.div3 { 
+    grid-area: 0 / 0 / 1 / 5; 
+    width: 100%;
+    font-family: monospace;
+    font-size: small;
+    
+}
+.div4 { 
+    grid-area: 5 / 1 / 6 / 7;
+    width: 100%;
+}
+
+#giff{
+    width: 100%;
+}
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: monospace;
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 3px;
+    background-color:darkgrey;
+    box-sizing: border-box;
+  }
+  ul>li{
+      width: 20%;
+  }
+  li {
+    float: left;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 20px;
+    color: black;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: white;
+  }
+
+  .img{
+      border: 2px solid black;
+  }
+
+  
